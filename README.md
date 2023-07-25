@@ -49,7 +49,7 @@ If the number of items in a GRN Form exceeds a certain threshold, the script cre
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/devHanif-git/GRN-Form-Generator.git
+   git clone https://github.com/devHanif-git/GRN-Form-Generator-GAS.git
     ```
 2. Open the `code.gs` file in the Google Apps Script editor.
 3. Set up your Google Sheets spreadsheet with the required column configurations mentioned in the "How it Works" section.
@@ -59,14 +59,14 @@ If the number of items in a GRN Form exceeds a certain threshold, the script cre
 ## Usage 
 
 1. Open your Google Sheets spreadsheet containing the item data.
-2. In the toolbar, click on "Add-ons" > "GRN" > "Generate GRN Form 2023" (The menu name can be customized).
+2. In the toolbar, click on "Form Generator" > "Generate GRN Form" (The menu name can be customized).
 3. The script will automatically generate GRN Forms based on the data in the spreadsheet and save them in the designated destination folder in Google Drive.
 4. The status column in the spreadsheet will be updated to "FINISHED" for each processed row.
 5. If the number of items in a GRN Form exceeds the limit, the script will create additional forms and spread the items across them.
 
 ## Contributing
 
-Contributions are welcome! If you have any ideas, suggestions, or bug reports, please [create an issue](https://github.com/devHanif-git/Digital-Clock/issues).
+Contributions are welcome! If you have any ideas, suggestions, or bug reports, please [create an issue](https://github.com/devHanif-git/GRN-Form-Generator-GAS/issues).
 
 1. Fork the project.
 2. Create your feature branch (`git checkout -b feature/YourFeature`).
