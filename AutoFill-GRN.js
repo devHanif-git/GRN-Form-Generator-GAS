@@ -5,31 +5,30 @@ function onOpen() {
 
 function functionMenuV2() {
   const ui = SpreadsheetApp.getUi();
-  const menu = ui.createMenu('GRN');
-  //menu.addItem('Generate GRN Form 2022', 'createGRNFormV2')
-  menu.addItem('Generate GRN Form 2023', 'createGRNFormV22023')
+  const menu = ui.createMenu('Form Generator - devHanif');
+  menu.addItem('Generate GRN Form', 'createGRNFormV22023')
   menu.addToUi();
 }
 
 function createGRNFormV22023() {
   // Declare variables to hold the Google Doc templates
-  const googleDocTemplate = DriveApp.getFileById('15WIbaGXKBlk0Utl6COInkBCT8muBxm5pLBgAhzze9rk');
-  const googleDocTemplateMoreThan13 = DriveApp.getFileById('1Jyo7Nxq1fNOpMP4NpT47TVFe_ci1MJD8MxNRYfnVNDc');
-  const googleDocTemplateMoreThan26 = DriveApp.getFileById('1XYM9_b-516FLkAf5opyRXbYZ7qboVb1mitKSUU_r27M');
-  const googleDocTemplateMoreThan39 = DriveApp.getFileById('1MzS9-YA1I02kBiELbMtdaFIBGZYlCAf7cA7gCX5IF-g');
-  const googleDocTemplateMoreThan52 = DriveApp.getFileById('1CRv22SCMHWMIyFkpuaFY_oPvuDoslaLKYw3ax0EpBMI');
-  const googleDocTemplateMoreThan65 = DriveApp.getFileById('1_sUN2xmbvEY9Ou1ifKEbGSTfai1rzzDlWqRw4U9Nbx4');
-  const googleDocTemplateMoreThan78 = DriveApp.getFileById('15RWcuy0rwHBy6Mun6HvDWQHcJzfVIpQY9SxFA3ZFAoA');
-  const googleDocTemplateMoreThan91 = DriveApp.getFileById('1MqKvoeLhTMwb7CxWp8zhuw2UrhQFRVnHV1QfRtvNgKw');
-  const googleDocTemplateMoreThan104 = DriveApp.getFileById('1Y3hdfibMSKwg17ww5Iu4v73tu8QiFAgOvclKprqxZ00');
-  const googleDocTemplateMoreThan117 = DriveApp.getFileById('1kUeaW84hiUVQuQ98oOCHziwchi0gafs6rs0UEImDugY');
+  const googleDocTemplate = DriveApp.getFileById('1j0eNPGmHoQbQ0UqXsimhB7XQDHnEuwqPGnoOQ6kxILo');
+  const googleDocTemplateMoreThan13 = DriveApp.getFileById('1kXnkiMahqSCPA2Ne5qVThjODVDAQcuEbA02uQiepQVs');
+  const googleDocTemplateMoreThan26 = DriveApp.getFileById('1ahVNErjHhbmfiELASAIFFCwXROlB3a3pgd0ebpbK3bo');
+  const googleDocTemplateMoreThan39 = DriveApp.getFileById('1Vt0pD6_DWk3Tg6Fu7dWTE4420d4ikUey6-ePRvxfmrA');
+  const googleDocTemplateMoreThan52 = DriveApp.getFileById('1hujUld9zsL7mToY3OIwjTAsmV4MrOZQGCtYWzYzoLr8');
+  const googleDocTemplateMoreThan65 = DriveApp.getFileById('1C6rKhsuUIfgL6tIN3UDiMiuT7Qj3hk9t_VOzaBNcbiE');
+  const googleDocTemplateMoreThan78 = DriveApp.getFileById('1S4sNbNeEJ8oAz8dKA_yNp1kNMxBKvyF5g1wiUXRinZA');
+  const googleDocTemplateMoreThan91 = DriveApp.getFileById('1Ueu9NroA3nAWwJveMiZBDu9GzzZyNZoIlgJuqvSvoRg');
+  const googleDocTemplateMoreThan104 = DriveApp.getFileById('1VtOaQGA7TuQlzQ5yAZZ1OXL6L3a_Pv5czXaeMwzhEks');
+  const googleDocTemplateMoreThan117 = DriveApp.getFileById('19FK7qU3foS4XA6U0Vufz1dVexpid864NpkBlXigGzzU');
 
   // Declare a variable to hold the destination folder ID
-  const destinationFolder = DriveApp.getFolderById('11RMjq0sW2th-fTiWRQyoUBlqN-T2ZSMq')
+  const destinationFolder = DriveApp.getFolderById('1J8DorF2MCIl-k7c6xIuAEbQqsTCiYdiZ')
 
   const sheet = SpreadsheetApp
     .getActiveSpreadsheet()
-    .getSheetByName('GRN2023')
+    .getSheetByName('Made by devHanif')
 
   // Setup Column
   const noCol = 1, dateCol = 2, supplierCol = 3, customerCol = 4, donoCol = 5, grnCol = 6, poCol = 7;
@@ -290,7 +289,7 @@ function createGRNFormV22023() {
     body.replaceText('{{GRNNO}}', currentGRN);
     body.replaceText('{{SUPPLIER}}', currentSupplier);
     body.replaceText('{{SDONO}}', currentDONO);
-    body.replaceText('{{CGPO}}', currentPO);
+    body.replaceText('{{PO}}', currentPO);
     body.replaceText('{{CUS}}', currentCust);
     body.replaceText('{{MODEL}}', currentModel);
     //BODY
