@@ -5,11 +5,11 @@
 </p>
 
 <p align="center">
-  <a href="https://your-live-demo-link.com/">View Demo</a>
+  <a href="https://drive.google.com/drive/folders/1aa8x8-cF2YN17ReiSXMa05FLy1CkfrNG?usp=sharing">View Demo</a>
   ·
-  <a href="https://github.com/devHanif-git/GRN-Form-Generator/issues">Report Bug</a>
+  <a href="https://github.com/devHanif-git/GRN-Form-Generator-GAS/issues">Report Bug</a>
   ·
-  <a href="https://github.com/devHanif-git/GRN-Form-Generator/issues">Request Feature</a>
+  <a href="https://github.com/devHanif-git/GRN-Form-Generator-GAS/issues">Request Feature</a>
 </p>
 
 ## Table of Contents
@@ -35,6 +35,8 @@ The script reads data from a Google Sheets spreadsheet with specific column conf
 - Column E: GRN Number
 - Column F: Purchase Order Number (PO)
 - Column G: Model Number
+
+`Please modify the code if you want to change anything about the column!!`
 
 Each row in the spreadsheet represents an item received, and the script generates a separate GRN Form for each supplier containing the relevant item details.
 
